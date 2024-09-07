@@ -33,7 +33,7 @@ export default {
   mounted(){
   	// 监听app触发monitorTestData，进行监听接收数据
     JsBridge.registerHandler('monitorTestData', (data) => {
-        console.log("监听到的数1据",data)
+        console.log("监听到的1数1据",data)
         this.monitor= data;
     })
   },
