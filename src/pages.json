@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "path": "pages/index",
+      "type": "home"
+    },
+    {
+      "path": "pages/group",
+      "type": "page"
+    },
+    {
+      "path": "pages/t",
+      "type": "page"
+    }
+  ],
+  "globalStyle": {
+    "backgroundColor": "@bgColor",
+    "backgroundColorBottom": "@bgColorBottom",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarTitleText": "Vitesse-Uni",
+    "navigationStyle": "custom"
+  },
+  "subPackages": []
+}
