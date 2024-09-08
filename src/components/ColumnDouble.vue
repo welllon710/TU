@@ -5,7 +5,7 @@
       <uni-icons v-if="showIcon" type="more-filled" size="20" @click="$emit('openSheet', 'ColumnDouble')"></uni-icons>
     </view>
     <view class="charts-q">
-      <qiun-data-charts type="column" :opts="opts" :chartData="chartData" tooltipFormat="tooltipDemo1"
+      <qiun-data-charts type="column" :opts="opts" :chartData="chartData" 
         @getIndex="getIndex" :ontouch="ontouch" />
     </view>
   </view>
@@ -71,16 +71,14 @@ export default {
             activeBgOpacity: 0.08,
             seriesGap: 2,
             categoryGap: 3,
-            barBorderCircle: false,
+            barBorderCircle: true,
             linearType: "opacity",
             linearOpacity: 0.7,
-            // customColor: [
-            //   '#5793df', '#78b1f2'
-            // ],
             colorStop: 0.1,
-            meterBorder: 1,
+            // meterBorder: 1,
             meterFillColor: "#FFFFFF",
-            labelPosition: "top"
+            labelPosition: "top",
+            barBorderCircle: true,
           },
         }
       }

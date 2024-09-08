@@ -9,7 +9,7 @@
               全国平均水平
             </view>
         <view class="charts-q">
-          <qiun-data-charts type="column" :opts="opts" :chartData="chartData" tooltipFormat="tooltipDemo1"
+          <qiun-data-charts type="column" :opts="opts" :chartData="chartData" 
     @getIndex="getIndex" :ontouch="ontouch"/>
         </view>
     </view>
@@ -83,7 +83,14 @@ export default {
             colorStop: 0.1,
             meterBorder: 1,
             meterFillColor: "#FFFFFF",
-            labelPosition: "bottom"
+            labelPosition: "bottom",
+            seriesGap: 5,
+            barBorderRadius: [
+              6,
+              6,
+              6,
+              6
+            ]
           },
           markLine: {
             type: 'dash',
