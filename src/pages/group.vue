@@ -39,12 +39,15 @@ export default {
   },
   methods: {
     openSheet(type) {
-      console.log('eee', type);
+      JsBridge.callHandler('getAppData',{'param': "你好，这是我JS传递给你的数据"}, (data) => {
+         console.log("获取到的数1据",data)
+          this.contnet = data;
+      })
       
     },
     getData() {
       JsBridge.callHandler('getAppData',{'param': "你好，这是我JS传递给你的数据"}, (data) => {
-         console.log("获取到的数据",data)
+         console.log("获取到的数1据",data)
           this.contnet = data;
       })
     }
